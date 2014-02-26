@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+
+@class PalavraShared;
+@class Palavra;
 
 @interface LetraAViewController : UIViewController
+{
+    NSMutableArray *dados;
+    NSMutableDictionary  *sections;
+    PalavraShared *palavraShared;
+}
+@property NSMutableArray *dados;
+@property NSMutableDictionary  *sections;
+@property (nonatomic, strong) PalavraShared *palavraShared;
+
 
 @end
